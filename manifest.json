@@ -1,0 +1,13 @@
+{
+"name": "Website Speed Analyzer",
+"version": "1.0",
+"description": "Analyzes the speed performance of a website and provides recommendations on how to improve it.",
+"manifest_version": 3,
+"content_scripts": [
+{
+"matches": [":///*"],
+"js": ["contentscript.js"]
+}
+],
+"permissions": ["tabs", "contextMenus", "declarativeNetRequest"]
+}
