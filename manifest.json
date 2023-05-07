@@ -1,13 +1,14 @@
 {
-"name": "Website Speed Analyzer",
-"version": "1.0",
-"description": "Analyzes the speed performance of a website and provides recommendations on how to improve it.",
-"manifest_version": 3,
-"content_scripts": [
-{
-"matches": ["http://*/*", "https://*/*"],
-"js": ["contentscript.js"]
-}
-],
-"permissions": ["tabs", "contextMenus", "declarativeNetRequest"]
+  "manifest_version": 3,
+  "name": "Rendimiento web",
+  "version": "1.0",
+  "description": "Analiza el rendimiento de la página web actual",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png", 
+    "default_popup": "popup.html"
+  }
 }
